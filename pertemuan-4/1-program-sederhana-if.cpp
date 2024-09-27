@@ -11,20 +11,14 @@ int main()
     cout << "Masukkan bilangan kedua\t: ";
     cin >> num2;
 
-    if (num > 0) {
-        cout << "Bilangan pertama positif\n";
-    } else if (num < 0) {
-        cout << "Bilangan pertama negatif\n";
+    if (num > 0 && num2 > 0) {
+        cout << "Semua bilangan positif\n";
+    } else if (num < 0 && num2 < 0) {
+        cout << "Semua bilangan negatif\n";
+    } else if (num == 0 || num2 == 0) {
+        cout << "Terdapat bilangan yang nol\n";
     } else {
-        cout << "BIlangan pertama nol\n";
-    }
-
-    if (num2 > 0) {
-        cout << "Bilangan kedua positif\n";
-    } else if (num2 < 0) {
-        cout << "Bilangan kedua negatif\n";
-    } else {
-        cout << "BIlangan kedua nol\n";
+        cout << "Campuran bilangan positif dan negatif\n";
     }
 
     return 0;
